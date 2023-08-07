@@ -5,18 +5,14 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+import proj1 from "../../public/images/projects/dinius.png";
+import proj2 from "../../public/images/projects/1.png";
+import proj3 from "../../public/images/projects/it.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
-
   return (
     <article
       className="relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border
@@ -68,7 +64,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             href={github}
             target={"_blank"}
             className="w-10"
-            aria-label="Crypto Screener Application github link"
+            aria-label="AI SAAS Application github link"
           >
             <GithubIcon />
           </Link>
@@ -79,7 +75,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
              bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark 
              sm:px-4 sm:text-base
             "
-            aria-label="Crypto Screener Application"
+            aria-label="Dinius AI SAAS Application"
           >
             Visit Project
           </Link>
@@ -90,7 +86,6 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
 };
 
 const Project = ({ title, type, img, link, github }) => {
-
   return (
     <article
       className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
@@ -163,17 +158,13 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
-        <meta
-          name="description"
-          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
-        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
-        />
+        <title>DianAtobe Dev| Projects Page</title>
+        <meta name="description" content="Diana Atobe, Full Stack Developer" />
       </Head>
 
       <TransitionEffect />
       <main
-        className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
+        className={` pb-10  flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
           <AnimatedText
@@ -183,58 +174,30 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Saas Personal Project"
+                title="Dinius AI Saas Application"
+                summary="AI SaaS Platform with five AI tools. Powered by the Next.js 13 App Router, the platform is not only efficient but also user-centric. Modern UX/UI Design, responsive for all devices. Made using a rich palette of web development technologies like React, Tailwind, Prisma, MySQL, Clerk, and more. "
                 img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+                link="https://dinius-ai.vercel.app/"
+                github="https://github.com/diniat/saas-ai-app"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                title="NFT collection Website"
+                type="Front End Personal Project"
+                title="Hoo Bank"
                 img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                link="https://hoo-bank-personal-project.vercel.app/"
+                github="https://github.com/diniat/HooBank-personalProject"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website"
-                title="Fashion Studio Website"
+                type="Front End Freelance Project"
+                title="Ideas Tech"
                 img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
+                link="#"
+                github="#"
               />
             </div>
           </div>
