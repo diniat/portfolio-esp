@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/dinius.png";
 import proj2 from "../../public/images/projects/1.png";
-import proj3 from "../../public/images/projects/it.jpg";
+import proj3 from "../../public/images/projects/it.JPG";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);

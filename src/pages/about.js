@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/dev1.jpg";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import AnimatedText from "@/components/AnimatedText";
@@ -67,7 +66,7 @@ export default function About() {
               />
               <Image
                 className="h-auto w-full rounded-2xl"
-                src={profile}
+                src="../../public/images/profile/dev1.JPG"
                 alt="devpic"
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
