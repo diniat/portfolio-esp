@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import profilePic from "../../public/images/profile/dev3.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
           <div className="flex w-full items-start justify-between md:flex-col">
             <div className="w-1/2 md:inline-block md:w-full md:pb-4">
               <Image
-                src="../../public/images/profile/dev3.jpg"
+                src={profilePic}
                 alt="DevPic"
                 className="h-auto w-[60%] rounded-lg shadow-md lg:w-full"
                 sizes="70vw"
