@@ -77,7 +77,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             "
             aria-label="Dinius AI SAAS Application"
           >
-            Visit Project
+            Visitar Proyecto
           </Link>
         </div>
       </div>
@@ -138,7 +138,7 @@ const Project = ({ title, type, img, link, github }) => {
             "
             aria-label={title}
           >
-            Visit
+            Visitar
           </Link>
           <Link
             href={github}
@@ -158,7 +158,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>DianAtobe Dev| Projects Page</title>
+        <title>DianAtobe Dev| Proyectos</title>
         <meta name="description" content="Diana Atobe, Full Stack Developer" />
       </Head>
 
@@ -168,15 +168,15 @@ export default function Projects() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Algunos de mis proyectos:"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Saas Personal Project"
+                type="Proyecto Personal Saas"
                 title="Dinius AI Saas Application"
-                summary="AI SaaS Platform with five AI tools. Powered by the Next.js 13 App Router, the platform is not only efficient but also user-centric. Modern UX/UI Design, responsive for all devices. Made using a rich palette of web development technologies like React, Tailwind, Prisma, MySQL, Clerk, and more. "
+                summary="Plataforma AI SaaS con cinco herramientas de IA. Impulsada por el App Router de Next.js 13, la plataforma no solo es eficiente sino también centrada en el usuario. Diseño moderno de UX/UI, adaptable a todos los dispositivos. Hecho usando una rica paleta de tecnologías de desarrollo web como React, Tailwind, Prisma, MySQL, Clerk y más."
                 img={proj1}
                 link="https://dinius-ai.vercel.app/"
                 github="https://github.com/diniat/saas-ai-app"
@@ -184,7 +184,7 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Front End Personal Project"
+                type="Proyecto Personal Front End"
                 title="Hoo Bank"
                 img={proj2}
                 link="https://hoo-bank-personal-project.vercel.app/"
@@ -193,7 +193,7 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Front End Freelance Project"
+                type="Proyecto Freelance Front End"
                 title="Ideas Tech"
                 img={proj3}
                 link="#"

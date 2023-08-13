@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>DianAtobe Dev | About Page</title>
+        <title>DianAtobe Dev | Sobre Mi</title>
         <meta name="description" content="Diana Atobe, Full Stack Developer." />
       </Head>
       <TransitionEffect />
@@ -20,7 +20,7 @@ export default function About() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="a little about me:"
+            text="un poco sobre mi:"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
@@ -30,28 +30,27 @@ export default function About() {
               md:col-span-8"
             >
               <p className="font-medium">
-                Hi, I&apos;m <strong>Diana</strong>, I am a Full Stack Web
-                Developer and a Computer Systems Analysis student. Previously, I
-                was studying medicine at the University of Buenos Aires, but I
-                realized that it wasn&apos;t for me. Luckily I discovered the
-                world of programming that I am really passionate about and
-                motivates me to continue to develop and grow my professional
-                skills and knowledge as a professional.
+                Hola, soy <strong>Diana</strong>, soy desarrolladora web Full
+                Stack y estudiante de análisis de sistemas informáticos.
+                Anteriormente estudiaba medicina en la Universidad de Buenos
+                Aires, pero me di cuenta de que no era para mí. Por suerte
+                descubrí el mundo de la programación que realmente me apasiona y
+                me motiva a seguir creciendo y mejorando omo profesional.
               </p>
               <p className="font-medium my-4">
-                I&apos;m currently learning React Native and I offer experience
-                with react, next, node js, sql databases, understanding of REST
-                API&apos;s, and more. I bring a positive attitude, autonomy, I
-                like it and I find it easy to work in a team, and I learn
-                quickly. I am a proactive, organized and results-oriented
-                person.
+                Actualmente estoy aprendiendo React Native y ofrezco experiencia
+                con react, next, node js, bases de datos sql y mongo,
+                comprensión de las API REST y más. Aporto una actitud positiva,
+                autonomía, me gusta y me resulta fácil trabajar en equipo, y
+                aprendo rápido. Soy una persona proactiva, organizada y
+                orientada a resultados.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Ya sea que esté trabajando en un sitio web, una aplicación móvil
+                u otro producto digital, aporto mi compromiso con la excelencia
+                en el diseño y el pensamiento centrado en el usuario a cada
+                proyecto en el que trabajo. Espero con interés la oportunidad de
+                aportar mis habilidades y pasión a su próximo proyecto.
               </p>
             </div>
             <div
@@ -87,7 +86,7 @@ export default function About() {
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  react, next and more
+                  react, next y más
                 </h2>
               </div>
 
@@ -105,7 +104,7 @@ export default function About() {
 
               <div className="flex flex-col items-end justify-center xl:items-center lg:hidden">
                 <span className="inline-block text-5xl font-bold md:text-4xl sm:text-3xl xs:text-2xl">
-                  Databases
+                  Bases de Datos
                 </span>
                 <h2
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 

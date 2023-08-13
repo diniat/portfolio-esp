@@ -38,7 +38,7 @@ const Education = () => {
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Education
+        Educación
       </h2>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
@@ -48,17 +48,17 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor's Degree in Computer Systems Analysis"
+            type="Licenciatura en Análisis de Sistemas Informáticos"
             time="2023-2026"
             place="Universidad Autonoma de Encarnacion (UNAE)"
-            info="Relevant courses included Data Structures and Algorithms, Web Development, and Artificial Intelligence."
+            info="Cursos relevantes incluídos Estructura de Datos y Algoritmos, Inteligencia Artificial y Desarrollo Web."
           />
 
           <Details
-            type="Full Stack Web Development"
+            type="Desarrollo Web Full Stack"
             time="2022-2023"
             place="SoyHenry Bootcamp"
-            info="700+ hours of classes and pair programming. Developed two full stack apps as academic projects."
+            info="700+ horas de clases y pair programming. Desarrollo de dos aplicaciones full stack como proyectos académicos."
           />
         </ul>
       </div>

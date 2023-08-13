@@ -80,7 +80,7 @@ const Navbar = () => {
         aria-expanded={isOpen}
         onClick={handleClick}
       >
-        <span className="sr-only">Open main menu</span>
+        <span className="sr-only">Abrir menú principal</span>
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
@@ -101,8 +101,8 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav className="flex items-center justify-center">
           <CustomLink className="mr-4" href="/" title="Home" />
-          <CustomLink className="mx-4" href="/about" title="About" />
-          <CustomLink className="mx-4" href="/projects" title="Projects" />
+          <CustomLink className="mx-4" href="/about" title="Sobre Mi" />
+          <CustomLink className="mx-4" href="/projects" title="Proyectos" />
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -114,7 +114,7 @@ const Navbar = () => {
             href="https://github.com/diniat"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my github profile"
+            aria-label="Chequea mi perfil de Github"
           >
             <GithubIcon />
           </motion.a>
@@ -124,7 +124,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/diana-atobe/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my linkedin profile"
+            aria-label="Chequea mi perfil de Linkedin"
           >
             <LinkedInIcon />
           </motion.a>
@@ -164,13 +164,13 @@ const Navbar = () => {
               toggle={handleClick}
               className="mx-4 lg:m-0 lg:my-2"
               href="/about"
-              title="About"
+              title="Sobre Mi"
             />
             <CustomMobileLink
               toggle={handleClick}
               className="mx-4 lg:m-0 lg:my-2"
               href="/projects"
-              title="Projects"
+              title="Proyectos"
             />
           </nav>
           <nav
@@ -183,7 +183,7 @@ const Navbar = () => {
               href="https://github.com/diniat"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my github profile"
+              aria-label="Chequea mi perfil de Github"
             >
               <GithubIcon />
             </motion.a>
@@ -193,7 +193,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/diana-atobe/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my linkedin profile"
+              aria-label="Chequea mi perfil de Linkedin"
             >
               <LinkedInIcon />
             </motion.a>
