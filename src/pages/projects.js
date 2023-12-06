@@ -85,7 +85,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, hidden }) => {
   return (
     <article
       className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
@@ -129,7 +129,11 @@ const Project = ({ title, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <div className="flex w-full items-center  justify-between">
+        <div
+          className={`${
+            hidden == true ? "hidden" : "flex"
+          } w-full items-center  justify-between`}
+        >
           <Link
             href={link}
             target={"_blank"}
@@ -189,6 +193,7 @@ export default function Projects() {
                 img={proj2}
                 link="https://hoo-bank-personal-project.vercel.app/"
                 github="https://github.com/diniat/HooBank-personalProject"
+                hidden={false}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -198,6 +203,7 @@ export default function Projects() {
                 img={proj3}
                 link="#"
                 github="#"
+                hidden={true}
               />
             </div>
           </div>
